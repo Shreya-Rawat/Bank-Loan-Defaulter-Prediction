@@ -64,9 +64,9 @@ Dataset Source: https://www.kaggle.com/datasets/sachinsarkar/deloitte-hackathon
   - Tuned models:
     *(We used Grid Search method for finding the optimum set of hyperparameters)
     
-    a) Random Forest (criterion='entropy', max_depth=5, min_samples_split=3, n_estimators=50)
-    b) Gradient Boosting Classifier (n_estimators = 100, learning_rate = 0.09)
-    c) Stacking Classifier(with estimators RandomForest and Gradient Boosting Classifier, final_estimator= LogisticRegression())
+    - Random Forest (criterion='entropy', max_depth=5, min_samples_split=3, n_estimators=50)
+    - Gradient Boosting Classifier (n_estimators = 100, learning_rate = 0.09)
+    - Stacking Classifier(with estimators RandomForest and Gradient Boosting Classifier, final_estimator= LogisticRegression())
     
     
  ### CONCLUSIONS:
