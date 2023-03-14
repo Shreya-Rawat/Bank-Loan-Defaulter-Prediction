@@ -4,14 +4,14 @@
 ### DOMAIN: Finance and Banking
 
 ### CONTEXT:
-There seems to be no end to bad loans in the country. According to the Reserve Bank of India, the overall badloansasof March 2021 stood at INR 8.35 lakh crore, compared to INR 8.96 lakh crore in March 2020. Banks run into losses when a customer doesn't pay their loans on time. Because of this, every year, bankshavelossesin crores, and this also impacts the country's economic growth to a large extend.
-In This is project, we will look at various attributes such as funded amount, term, interest rates, loan amount, balance,etc. to predict if a customer will be a loan defaulter or not. 
+There seems to be no end to bad loans in the country. According to the Reserve Bank of India, the overall bad loans as of March 2021 stood at INR 8.35 lakh crore, compared to INR 8.96 lakh crore in March 2020. Banks run into losses when a customer doesn't pay their loans on time. Because of this, every year, banks have losses in crores, and this also impacts the country's economic growth to a large extend.
+In this project, we will look at various attributes such as funded amount, term, interest rates, loan amount, balance,etc. to predict if a customer will be a loan defaulter or not. 
 
 ### PROJECT OBJECTIVE: 
-The Goal is to predict if a customer will be a loan defaulter or not based on thegiveninputfeatures such as funded amount, term, interest rate etc. 
+The Goal is to predict if a customer will be a loan defaulter or not based on the given input features such as funded amount, term, interest rate etc. 
 
 ### DATASET DESCRIPTION:
-Data set has around 67463 instances and 35 features and includes target column as Loan Status.(1=Defaulter and0=Non Defaulters)
+Data set has around 67463 instances and 35 features and includes target column as Loan Status.(1=Defaulter and 0=Non Defaulters)
 Dataset Source: https://www.kaggle.com/datasets/sachinsarkar/deloitte-hackathon
 
 ### ATTRIBUTES:
@@ -52,3 +52,34 @@ Dataset Source: https://www.kaggle.com/datasets/sachinsarkar/deloitte-hackathon
 - Total Current Balance: total current balance from all accounts.
 - Total Revolving Credit Limit: total revolving credit limit.
 - Loan Status: 1 = Defaulter, 0 = Non Defaulters.
+
+### Steps taken in the Project:
+1) Data Cleaning including missing and duplicate values check, and removing redundant columns
+2) Exloratory Data Analysis including univariate and multivariate analysis
+3) Label encoding the categorical data
+4) Handling imbalanced data using oversampling approach SMOTE
+5) Selecting K best features using Backward Feature Elimination ( Reduced no. of features from 31 to 21 )
+6) MODEL BUILDING: 
+  - Build a base model (Random Forest) using the Original Imbalanced data
+  - Tuned models:
+    *(We used Grid Search method for finding the optimum set of hyperparameters)
+    
+    a) Random Forest (criterion='entropy', max_depth=5, min_samples_split=3, n_estimators=50)
+    b) Gradient Boosting Classifier (n_estimators = 100, learning_rate = 0.09)
+    c) Stacking Classifier(with estimators RandomForest and Gradient Boosting Classifier, final_estimator= LogisticRegression())
+    
+    
+ ### CONCLUSIONS:
+ - Base Model: Performed poorly as it used imbalanced data and also didnt employ hyperparameter tuning methods
+ - Best Performing Model = 'Gradient Boosting Classifier' with 77.6% test accuracy having:
+   - Optimum Hyperparameters = (n_estimators = 100, learning_rate = 0.09, random_state=6)
+   - Backward feature selection (only 21 features instead of original 35)
+   - Upsampled data
+  
+  
+  
+  
+  
+  
+  
+  
