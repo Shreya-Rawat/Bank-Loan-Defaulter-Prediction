@@ -15,9 +15,9 @@ Data set has around 67463 instances and 35 features and includes target column a
 Dataset Source: https://www.kaggle.com/datasets/sachinsarkar/deloitte-hackathon
 
 ### ATTRIBUTES:
-- Attribute Information:
-- ID: unique ID of representative.
-- Loan Amount: loan amount applied.
+Attribute Information:
+ID: unique ID of representative.
+Loan Amount: loan amount applied.
 Funded Amount: loan amount funded.
 Funded Amount Investor: loan amount approved by the investors.
 Term: term of loan (in months).
@@ -51,22 +51,3 @@ Total Collection Amount: total collection amount ever owed.
 Total Current Balance: total current balance from all accounts.
 Total Revolving Credit Limit: total revolving credit limit.
 Loan Status: 1 = Defaulter, 0 = Non Defaulters.
-
-
-
-
-1. ID: unique ID of representative. 
-2. Loan Amount: loan amount applied. 
-3. Funded Amount: loan amount funded. 
-4. Funded Amount Investor: loan amount approved by the investors. 
-5. Term: term of loan (in months). 
-6. Batch Enrolled: batch numbers to representatives.
-7. Interest Rate: interest rate (%) on loan.  
-8. Grade: grade by the bank. 
-9. Sub Grade: sub-grade by the bank. 
-10. Employment Duration: duration. 
-11. Home Ownership: Owner ship of home. 
-12. Verification Status: Income verification by the bank. 
-13. Payment Plan: if any payment plan has started against loan. 
-14. Loan Title: loan title provided. 
-15. Debit to Income: ratio of representative's total monthly debt repayment divided by self reported monthly income excludingmortgage. 16. Delinquency - two years: number of 30+ days delinquency in past 2 years. 17. Inquires- six months: total number of inquiries in last 6 months. 18. Open Account: number of open credit line in representative's credit line. 19. Public Record: number of derogatory public records. 20. Revolving Balance: total credit revolving balance. 21. Revolving Utilities: amount of credit a representative is using relative to revolving_balance. 22. Total Accounts: total number of credit lines available in representatives credit line. 23. Initial List Status: unique listing status of the loan - W(Waiting), F(Forwarded). 24. Total Received Interest: total interest received till date. 25. Total Received Late Fee: total late fee received till date. 26. Recoveries: post charge off gross recovery. 27. Collection Recovery Fee: post charge off collection fee. 28. Collection 12 months Medical: total collections in last 12 months excluding medical collections. 29. Application Type: indicates when the representative is an individual or joint. 30. Last week Pay: indicates how long (in weeks) a representative has paid EMI after batch enrolled. 31. Accounts Delinquent: number of accounts on which the representative is delinquent. 32. Total Collection Amount: total collection amount ever owed. 33. Total Current Balance: total current balance from all accounts. 34. Total Revolving Credit Limit: total revolving credit limit. 35. Loan Status: 1 = Defaulter, 0 = Non Defaulters.
