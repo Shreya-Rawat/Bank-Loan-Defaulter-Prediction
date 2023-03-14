@@ -70,16 +70,12 @@ Dataset Source: https://www.kaggle.com/datasets/sachinsarkar/deloitte-hackathon
     
     
  ### CONCLUSIONS:
- - Base Model: Performed poorly as it used imbalanced data and also didnt employ hyperparameter tuning methods
- - Best Performing Model = 'Gradient Boosting Classifier' with 77.6% test accuracy having:
+ 
+ - Base Model: 
+   - Base model used imbalanced data without any hyperparameter tuning
+   - It reported strong bias towards the high frequency class and therefore the accuracy scores were good even though the minority class is wrongly predicted !
+
+- Best Performing Model = 'Gradient Boosting Classifier' with 77.6% test accuracy having:
    - Optimum Hyperparameters = (n_estimators = 100, learning_rate = 0.09, random_state=6)
    - Backward feature selection (only 21 features instead of original 35)
    - Upsampled data
-  
-  
-  
-  
-  
-  
-  
-  
