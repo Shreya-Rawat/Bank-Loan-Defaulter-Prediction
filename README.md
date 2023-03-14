@@ -72,7 +72,8 @@ Dataset Source: https://www.kaggle.com/datasets/sachinsarkar/deloitte-hackathon
  ### CONCLUSIONS:
  
  - Base Model: 
-   - Base model used imbalanced data without any hyperparameter tuning
+   - Base model shows 90% train and test accuracy but a recall of zero !
+   - It used imbalanced data without any hyperparameter tuning.
    - It reported strong bias towards the high frequency class and therefore the accuracy scores were good even though the minority class is wrongly predicted !
 
 - Best Performing Model = 'Gradient Boosting Classifier' with 77.6% test accuracy having:
