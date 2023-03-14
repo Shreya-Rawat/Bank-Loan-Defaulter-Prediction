@@ -60,7 +60,7 @@ Dataset Source: https://www.kaggle.com/datasets/sachinsarkar/deloitte-hackathon
 4) Handling imbalanced data using oversampling approach SMOTE
 5) Selecting K best features using Backward Feature Elimination ( Reduced no. of features from 31 to 21 )
 6) MODEL BUILDING: 
-  - Build a base model (Random Forest) using the Original Imbalanced data
+  - Base model (Random Forest) using the Original Imbalanced data
   - Tuned models:
     *(We used Grid Search method for finding the optimum set of hyperparameters)
     
